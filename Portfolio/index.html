@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Poppins?query=poppins">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            list-style: none;
+            text-decoration: none;
+            color: white;
+        }
+
+
+        nav ul li a:hover {
+            color: lavender;
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+
+        }
+
+        nav ul li {
+            text-decoration: none;
+            margin: 0 23px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+            align-items: center;
+        }
+
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection.buttons {
+            padding: 50px 0;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background-color: #1e2167;
+            color: white;
+            border: 2px solid black;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+            margin: 30px 0;
+        }
+
+
+        .rightsection img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(170, 107, 288);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(8, 8, 238);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            background-color: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 50px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .vertical-tittle {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .vertical-desc {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+
+        .work-experience {
+            background-color: rgb(18, 18, 62);
+            color: white;
+            padding: 50px 0;
+            overflow-x: auto;
+        }
+
+        .work-experience h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .work-experience .box {
+            display: inline-flex;
+            align-items: center;
+            padding: 20px;
+            border-right: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .work-experience .box:last-child {
+            border-right: none;
+        }
+
+        .work-experience .vertical {
+            width: 1px;
+            background-color: rgba(255, 255, 255, 0.3);
+            margin: 0 20px;
+            height: 60px;
+        }
+
+        .work-experience .info {
+            text-align: left;
+        }
+
+        .work-experience .info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .work-experience .info p {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        footer {
+            background-color: #0e0e1a;
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        .footer .footer-second ul li a,
+        .footer .footer-third ul li a,
+        .footer .footer-fourth ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sheikh Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple"> Md Asif</span>
+                <div>and I am a passionate Front-End Developer</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="Resume.png.pdf" class="btn" download>Download Resume</a>
+                    <a href="https://github.com/Sheikh-ASif" class="btn">Visit Github</a>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="pg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="work-experience">
+            <h1>Work Experience</h1>
+            <div class="box">
+                <img class="image-top" src="html.png" alt="">
+                <div class="vertical"></div>
+                <div class="info">
+                    <h3 class="vertical-tittle">HTML Developer(2023)</h3>
+                    <p class="vertical-desc">I completed my html programming in last year it was a pretty good
+                        experience for me and that is the first step towards the my developer worlds </p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image-top" src="css3.png" alt="">
+                <div class="vertical"></div>
+                <div class="info">
+                    <h3 class="vertical-tittle">CSS-3(2023)</h3>
+                    <p class="vertical-desc">
+                        I also completed my CSS programming in Nov last year it was a very exciting experience because
+                        whenever we apply css on the codes we get instant result , that why it was a exciting experience
+                        for me and that is the one more step forward towards the my developer worlds .
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image-top" src="js.png" alt="">
+                <div class="vertical"></div>
+                <div class="info">
+                    <h3 class="vertical-tittle">Java Script(2024)</h3>
+                    <p class="vertical-desc">I started the Java Script in Jan this year, and still working on it, this
+                        language is more exciting than the HTML and CSS because we add the functionality, By using the
+                        Java
+                        Script we create more interesting things. Learning of Java Script still carry on.</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image-top" src="react.png" alt="">
+                <div class="vertical"></div>
+                <div class="info">
+                    <h3 class="vertical-tittle">React.JS</h3>
+                    <p class="vertical-desc">I wouldn't like to do work on the React JS right now because we still have
+                        some work to do in JavaScript. But At the end of the this month hopefully we can completed the
+                        Java Script.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Some of the Quick Links</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/md-asif-sheikh-74b3b52b8/" title="LinkedIn">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><a href="https://github.com/Sheikh-ASif" title="GitHub">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li><a href="https://www.hackerrank.com/profile/Asif84417929" title="HackerRank">HackerRank</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            copyright &#169; asifportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Front-End Developer.', 'Web Designer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
